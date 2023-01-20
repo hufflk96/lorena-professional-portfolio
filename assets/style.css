@@ -1,0 +1,230 @@
+                           /* Global formatting */
+                           *{
+                            margin: 0;
+                        }
+                        
+                        main{
+                            margin-left: 5vw;
+                            margin-right: 5vw;
+                            position: absolute;
+                        }
+                        
+                                                                /*Header formatting*/
+                        header{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            border: 1px solid rgb(0, 0, 0);
+                            background-color: rgb(39, 39, 39);    
+                        }
+                        /* header styling */
+                        .header-left{
+                            display: flex;
+                            height: 5vw;
+                            background-color: rgb(46, 165, 165);
+                            width: 23vw;
+                            padding-left: 4vw;
+                            border-bottom-right-radius: 50px;
+                            border-top-right-radius: 50px;
+                        }
+                        
+                        .name{
+                            font-size: 3vw;
+                            font-family: Georgia, serif;
+                            width: 5vw;
+                            transform: translateY(.5vw);
+                            margin-left: -1.5vw;
+                        }
+                        
+                        .header-left img{
+                            width: 5vw;
+                            height: 5vw;
+                            border-radius: 50%;
+                            margin-left: 19vw;
+                            position: absolute;
+                        }
+                        
+                        /* header styling  */
+                        .header-right{
+                            display: flex;
+                            height: 5vw;
+                            margin-right: 1vw;
+                        }
+                        
+                        .header-right a:link{
+                            text-decoration: none;
+                            color: rgb(46, 165, 165);
+                        }
+                        
+                        .header-right a:visited{
+                            color: rgb(46, 165, 165);
+                        }
+                        
+                        .header-right ul{
+                            font-size: 2vw;
+                            display: flex;
+                            color: black;
+                            list-style-type: none;
+                            margin-right: 1vw;
+                            height: 5vw;
+                            transform: translateY(1vw);
+                        }
+                        
+                        .item{
+                            margin-right: 1vw;
+                            border-bottom: .25vw solid rgb(46, 165, 165);
+                            color: rgb(46, 165, 165);
+                            height: 2vw;
+                        }
+                        
+                        
+                        /* Background image & subtitle */
+                        .flex-left{
+                            display: flex;
+                            justify-content: right;
+                            width: 25vw;
+                            font-size: 4vw;
+                            margin-right: 2vw;
+                        }
+                        
+                        .flex-right{
+                            border-left: .3vw solid rgb(39, 39, 39);
+                            display: flex;
+                            width: 75%;
+                            text-align: left;
+                        }
+                        .background-subtitle{
+                            display: flex;
+                            position: relative;
+                            color: rgb(253, 253, 253);
+                            font-size: 3vw;
+                        
+                        }
+                        
+                        .background-img img{
+                            width: 200%;
+                            max-height: 30%;
+                            background-attachment: fixed;
+                        }
+                        
+                        .subtitle{
+                            position: absolute;
+                            bottom: 60vw;
+                            right: 4vw;
+                        }
+                        
+                        
+                        /*about me */
+                        .about{
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 2vw;
+                        }
+                        
+                        
+                        
+                        .about-paragraphs{
+                            padding-left: 1vw;
+                            font-size: 1.5vw;
+                        }
+                        
+                        .about p{
+                            margin-bottom: 20px;
+                        }
+                        
+                        /* Work */
+                        .work{   
+                            display: flex;
+                        }
+                        
+                        .projects{
+                            justify-content: center;
+                            width: 100%;
+                        }
+                        
+                        .row{
+                            display: flex;
+                            position: relative;
+                            color: rgb(46, 165, 165);
+                            font-size: 3vw;
+                        }
+                        
+                        .column{
+                            padding-left: 1vw;
+                            flex: 1;
+                        }
+                        
+                        .column img{
+                            width: 100%;
+                            border: .3vw solid rgb(46, 165, 165);
+                            padding: 0px;
+                            opacity: 65%;
+                        }
+                        
+                        .column img:hover{
+                            border: 6spx solid rgb(46, 165, 165);
+                            cursor: pointer;
+                            opacity: 100%;
+                        }
+                        
+                        .info{
+                            display:flex;
+                            flex-direction: column;
+                            font-size: 2vw;
+                            position: absolute;
+                            bottom: 2vw;
+                            margin-left: 0px;
+                        }
+                        
+                        .project-name{
+                            font-size: 3vw;
+                        }
+                        
+                        .technology{
+                            font-size: 1vw;
+                        }
+                        
+                        .info{
+                            border: 10px solid rgb(46, 165, 165);
+                            border-bottom-right-radius: 10px;
+                            border-top-right-radius: 10px;
+                            color: black;
+                            background-color: rgb(46, 165, 165);
+                        }
+                        
+                        .contact-me{
+                            margin-top: 2vw;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            font-size: 1.5vw;
+                        }
+                        
+                        .contact-info{
+                            display: flex;
+                            justify-content: space-evenly;
+                            width: 100%;
+                            flex-direction: row;
+                            font-size: 3vw;
+                            margin-bottom: 2vw;
+                            margin-top: 1vw;
+                        }
+                        
+                        .contact-info a:link{
+                            text-decoration: none;
+                            color: rgb(46, 165, 165);
+                        }
+                        
+                        .contact-info p{
+                            border-bottom: .3vw solid rgb(39, 39, 39);
+                        }
+                        
+                        /* Contact Information */
+                        @media (max-width: 600px){
+                            .about p{
+                                font-size: 15px;
+                            }
+                            .info{
+                                height: 3vw;
+                            }
+                        }
